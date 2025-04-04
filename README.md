@@ -12,13 +12,6 @@ Esta es una aplicación web desarrollada en **React JS** que permite gestionar l
 
 ---
 
-## 🛠️ Instalación y configuración
-
-### 1️⃣ Clonar el repositorio
-```bash
-git clone https://github.com/tu-usuario/dotaciones-turnos.git
-cd dotaciones-turnos
-
 🖥️ Tecnologías utilizadas
 
 React JS - Framework de JavaScript para interfaces dinámicas.
