@@ -138,6 +138,16 @@ body {
   transition: all 0.3s ease;
   font-size: 14px;
 }
+.input-ausentismo {
+  flex: 1;
+  min-width: 100px;
+  max-width: 300px;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
 
 .input:focus {
   border-color: #007bff;
@@ -357,6 +367,13 @@ body {
     gap: px;
     width: 90%;
   }
+  .input-ausentismo {
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: px;
+  }
 
   .uap-roles {
     flex-direction: column;
@@ -383,10 +400,11 @@ body {
 
   .ausentismo-table th,
   .ausentismo-table td {
-    max-width: 130px;
+    max-width: 100px;
     padding: 5px;
     border-bottom: 1px solid #ddd;
-    text-align: left;
+    text-align: center;
+    
   }
 
   .title,
@@ -401,6 +419,11 @@ body {
   }
 
   .input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .input-ausentismo {
     width: 100%;
     font-size: 14px;
   }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Ausentismo = ({ausentismo, setAusentismo}) => {
+export const Ausentismo = ({ ausentismo, setAusentismo }) => {
 
     const handleAusentismoChange = (index, field, value) => {
         const newAusentismo = [...ausentismo];
@@ -19,7 +19,7 @@ export const Ausentismo = ({ausentismo, setAusentismo}) => {
     };
 
     return (
-        <>
+        <> <div className="uap-container">
             <h2 className="title">Ausentismo</h2>
             <table className="ausentismo-table">
                 <thead>
@@ -35,7 +35,7 @@ export const Ausentismo = ({ausentismo, setAusentismo}) => {
                             <td>
                                 <input
                                     type="text"
-                                    className="input"
+                                    className="input-ausentismo"
                                     value={ausente.nombre}
                                     placeholder="Nombre"
                                     onChange={(e) => handleAusentismoChange(index, "nombre", e.target.value)}
@@ -44,7 +44,7 @@ export const Ausentismo = ({ausentismo, setAusentismo}) => {
 
                             <td>
                                 <select
-                                    className="input"
+                                    className="input-ausentismo"
                                     value={ausente.motivo}
                                     onChange={(e) => handleAusentismoChange(index, "motivo", e.target.value)}
                                 >
@@ -64,7 +64,7 @@ export const Ausentismo = ({ausentismo, setAusentismo}) => {
 
             </table>
             <button className="add-ausente-button" onClick={addAusente}>+</button>
-
+        </div>
         </>
     )
 }
